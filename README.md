@@ -4,7 +4,7 @@ First time trying Jotai and ChakraUI
 ## Preview
 Preview available via my github pages: https://tyrkinn.github.io
 
-#Run
+# Run
 
 Install all packages
 ```bash
@@ -20,7 +20,7 @@ npm run start
 yarn run start 
 ```
 
-## Build
+# Build
 
 Install all packages
 ```bash
