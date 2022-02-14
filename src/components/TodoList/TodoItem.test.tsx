@@ -1,11 +1,12 @@
 import React, {useEffect} from 'react';
-import {fireEvent, render, screen} from '@testing-library/react';
+import {render, screen} from '@testing-library/react';
 import {TodoItem} from './TodoItem';
 import {List} from '@chakra-ui/react';
 import '@testing-library/jest-dom';
 import {todosAtom} from '../../store/shared';
 import {useAtom} from 'jotai';
 import {Todo} from '../../types/todo';
+import userEvent from '@testing-library/user-event';
 
 test('TodoItem should render valid Todo', () => {
   render(
@@ -46,7 +47,7 @@ const MockTodoList = () => {
 
 test('Complete todo button should work properly', () => {
   render(<MockTodoList/>);
-  fireEvent.click(screen.getByLabelText('Complete todo button'));
+  userEvent.click(screen.getByLabelText('Complete todo button'));
 
   const todos: Todo[] =
       JSON.parse(localStorage.getItem('todos') || '[]') as Todo[];
@@ -56,7 +57,7 @@ test('Complete todo button should work properly', () => {
 
 test('Delete todo button should work properly', () => {
   render(<MockTodoList/>);
-  fireEvent.click(screen.getByLabelText('Delete todo button'));
+  userEvent.click(screen.getByLabelText('Delete todo button'));
 
   const todos: Todo[] =
       JSON.parse(localStorage.getItem('todos') || '[]') as Todo[];
