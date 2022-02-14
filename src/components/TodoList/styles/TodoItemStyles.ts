@@ -16,7 +16,7 @@ export const createTodoItemStyles = (completed: boolean) => ({
 export const createDeleteIconStyles = () => ({
   'color': 'red.400',
   'variant': 'ghost',
-  'aria-label': 'Delete todo',
+  'aria-label': 'Delete todo button',
   'icon': React.createElement(DeleteIcon),
   '_hover': {
     background: 'red.400',
