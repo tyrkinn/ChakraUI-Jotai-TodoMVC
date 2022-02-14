@@ -1,6 +1,9 @@
 #TODO APP
 First time trying Jotai and ChakraUI
 
+## Preview
+Preview available via my github pages: https://tyrkinn.github.io
+
 #Run
 
 Install all packages
