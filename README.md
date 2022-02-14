@@ -1,7 +1,7 @@
-#TODO APP
+# TODO APP
 First time trying Jotai and ChakraUI
 
-#Run
+## Run
 
 Install all packages
 ```bash
@@ -17,7 +17,7 @@ npm run start
 yarn run start 
 ```
 
-#Build
+## Build
 
 Install all packages
 ```bash
