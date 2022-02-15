@@ -9,7 +9,7 @@ export const activeTodosAtom = atom(
     (get) => get(todosAtom).filter((t) => !t.completed),
 );
 export const filterAtom = atom<Filter>(Filter.ALL);
-export const todoView = atom(
+export const filteredTodosAtom = atom(
     (get) => {
       const filter = get(filterAtom);
       switch (filter) {
