@@ -27,14 +27,13 @@ const TodoItemCheckIcon: React.FC<TodoItemCheckIconProps> =
 type TodoItemDeleteIconComponent = React.FC<PropsOf<typeof IconButton>>
 
 const TodoItemDeleteIcon: TodoItemDeleteIconComponent =
-    (props) => {
-      return (
-        <IconButton
-          {...createDeleteIconStyles()}
-          {...props}
-        />
-      );
-    };
+    (props) =>
+      <IconButton
+        {...createDeleteIconStyles()}
+        {...props}
+        aria-label={'Delete todo button'}
+      />;
+
 
 export const TodoItem: React.FC<{ todo: Todo }> =
     ({todo: {id, title, completed}}) => {
