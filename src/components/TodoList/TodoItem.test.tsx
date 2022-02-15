@@ -11,7 +11,6 @@ import userEvent from '@testing-library/user-event';
 test('TodoItem should render valid Todo', () => {
   render(
       <TodoItem todo={{id: 0, completed: false, title: 'New Todo'}} />,
-      {wrapper: List},
   );
   expect(screen.getByText('New Todo')).toBeInTheDocument();
 });
@@ -19,7 +18,6 @@ test('TodoItem should render valid Todo', () => {
 test(`TodoItem shouldn't have check icon when completed`, async () => {
   render(
       <TodoItem todo={{id: 0, title: 'New todo', completed: true}} />,
-      {wrapper: List},
   );
 
   const completeButton = await screen
