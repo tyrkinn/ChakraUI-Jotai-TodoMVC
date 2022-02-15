@@ -1,11 +1,11 @@
 import React from 'react';
-import {ButtonGroup, Flex, IconButton, ListItem} from '@chakra-ui/react';
+import {ButtonGroup, Flex, IconButton} from '@chakra-ui/react';
 import {useTodoItem} from '../../hooks';
 import {
   createCheckIconStyles,
   createDeleteIconStyles,
   createTodoItemStyles,
-} from './styles';
+} from '../styles';
 import {Todo} from '../../types/todo';
 
 interface TodoItemCheckIconProps
