@@ -1,10 +1,10 @@
 import React from 'react';
 import {screen, render} from '@testing-library/react';
-import {FilterButton} from './FilterButton';
-import {useFilter} from '../../../hooks';
-import {Filter} from '../../../types/filter';
+import {FilterButton} from 'components/Filter/FilterButton/FilterButton';
+import {useFilter} from 'hooks';
+import {Filter} from 'types/filter';
 import {useAtom} from 'jotai';
-import {filterAtom} from '../../../store/todoList';
+import {filterAtom} from 'store/todoList';
 import userEvent from '@testing-library/user-event';
 
 

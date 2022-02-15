@@ -1,5 +1,5 @@
 import {useAtom} from 'jotai';
-import {todosAtom} from '../store/shared';
+import {todosAtom} from 'store/shared';
 
 export const useTodoItem = (id: number) => {
   const [, setTodos] = useAtom(todosAtom);

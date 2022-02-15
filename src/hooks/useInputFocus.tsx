@@ -1,5 +1,5 @@
 import {useEffect, useRef} from 'react';
-import {showFormErrorsAtom} from '../store/addTodoForm';
+import {showFormErrorsAtom} from 'store/addTodoForm';
 import {useAtom} from 'jotai';
 
 export const useInputFocus = () => {

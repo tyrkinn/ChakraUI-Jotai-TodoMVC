@@ -1,8 +1,8 @@
 import React from 'react';
 import {render, screen} from '@testing-library/react';
-import {AddTodoForm} from './AddTodoForm';
+import {AddTodoForm} from 'components/AddTodoForm/AddTodoForm';
 import userEvent from '@testing-library/user-event';
-import {Todo} from '../../types/todo';
+import {Todo} from 'types/todo';
 
 test('Error message should be displayed when focusing empty input', () => {
   render(<AddTodoForm />);

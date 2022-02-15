@@ -1,8 +1,8 @@
 import React from 'react';
-import {useFilter} from '../../hooks';
+import {useFilter} from 'hooks';
 import {SimpleGrid} from '@chakra-ui/react';
-import {FilterButton} from './FilterButton/FilterButton';
-import {Filter} from '../../types/filter';
+import {FilterButton} from 'components/Filter/FilterButton/FilterButton';
+import {Filter} from 'types/filter';
 
 export const TodoFilter: React.FC = () => {
   const {buttonClick} = useFilter();

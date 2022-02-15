@@ -1,3 +1,5 @@
-export {FilterButton} from './FilterButton/FilterButton';
-export type {FilterButtonProps} from './FilterButton/FilterButton';
+export {FilterButton} from 'components/Filter/FilterButton/FilterButton';
+export type {
+  FilterButtonProps,
+} from 'components/Filter/FilterButton/FilterButton';
 export {TodoFilter} from './TodoFilter';

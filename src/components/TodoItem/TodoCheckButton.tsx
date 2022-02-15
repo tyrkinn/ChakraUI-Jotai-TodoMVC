@@ -1,6 +1,6 @@
 import React from 'react';
 import {IconButton} from '@chakra-ui/react';
-import {createCheckIconStyles} from '../styles';
+import {createCheckIconStyles} from 'styles';
 
 export interface TodoCheckButtonProps
   extends Omit<React.ComponentProps<typeof IconButton>, 'aria-label'> {

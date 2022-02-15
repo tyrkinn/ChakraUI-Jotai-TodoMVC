@@ -1,6 +1,6 @@
 import {atom} from 'jotai';
-import {todosAtom} from './shared';
-import {Filter} from '../types/filter';
+import {todosAtom} from 'store/shared';
+import {Filter} from 'types/filter';
 
 export const completedTodosAtom = atom(
     (get) => get(todosAtom).filter((t) => t.completed),

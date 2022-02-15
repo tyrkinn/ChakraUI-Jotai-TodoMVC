@@ -6,8 +6,8 @@ import {
   FormErrorMessage,
   FormHelperText,
 } from '@chakra-ui/react';
-import {AddTodoInput} from './AddTodoInput';
-import {useAddTodoForm} from '../../hooks';
+import {AddTodoInput} from 'components/AddTodoForm/AddTodoInput';
+import {useAddTodoForm} from 'hooks';
 
 const FormHelper: React.FC<{ isFormValid: boolean }> = ({isFormValid}) => {
   return isFormValid ?

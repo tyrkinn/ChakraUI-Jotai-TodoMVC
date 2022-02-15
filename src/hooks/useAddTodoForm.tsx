@@ -1,7 +1,7 @@
 import React, {ChangeEvent, useState} from 'react';
 import {useAtom} from 'jotai';
-import {todosAtom} from '../store/shared';
-import {lastIdAtom, showFormErrorsAtom} from '../store/addTodoForm';
+import {todosAtom} from 'store/shared';
+import {lastIdAtom, showFormErrorsAtom} from 'store/addTodoForm';
 
 export const useAddTodoForm = () => {
   const [showErrors, setShowErrors] = useAtom(showFormErrorsAtom);

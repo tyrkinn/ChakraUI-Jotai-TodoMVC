@@ -1,1 +1,1 @@
-export {TodoItem} from './TodoItem';
+export {TodoItem} from 'components/TodoItem/TodoItem';

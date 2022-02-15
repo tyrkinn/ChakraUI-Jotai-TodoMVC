@@ -1,10 +1,10 @@
 import React from 'react';
 import {ButtonGroup, Flex} from '@chakra-ui/react';
-import {useTodoItem} from '../../hooks';
-import {createTodoItemStyles} from '../styles';
-import {Todo} from '../../types/todo';
-import {TodoDeleteButton} from './TodoDeleteButton';
-import {TodoCheckButton} from './TodoCheckButton';
+import {useTodoItem} from 'hooks';
+import {createTodoItemStyles} from 'styles';
+import {Todo} from 'types/todo';
+import {TodoDeleteButton} from 'components/TodoItem/TodoDeleteButton';
+import {TodoCheckButton} from 'components/TodoItem/TodoCheckButton';
 
 
 export const TodoItem: React.FC<{ todo: Todo }> =

@@ -1,6 +1,6 @@
 import {useAtom} from 'jotai';
-import {filterAtom} from '../store/todoList';
-import {Filter} from '../types/filter';
+import {filterAtom} from 'store/todoList';
+import {Filter} from 'types/filter';
 
 export const useFilter = () => {
   const [filter, setFilter] = useAtom(filterAtom);

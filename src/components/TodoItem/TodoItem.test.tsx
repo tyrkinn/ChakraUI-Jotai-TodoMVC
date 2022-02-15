@@ -1,11 +1,11 @@
 import React, {useEffect} from 'react';
 import {render, screen} from '@testing-library/react';
-import {TodoItem} from './TodoItem';
+import {TodoItem} from 'components/TodoItem/TodoItem';
 import {List} from '@chakra-ui/react';
 import '@testing-library/jest-dom';
-import {todosAtom} from '../../store/shared';
+import {todosAtom} from 'store/shared';
 import {useAtom} from 'jotai';
-import {Todo} from '../../types/todo';
+import {Todo} from 'types/todo';
 import userEvent from '@testing-library/user-event';
 
 test('TodoItem should render valid Todo', () => {

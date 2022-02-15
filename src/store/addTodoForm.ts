@@ -1,5 +1,5 @@
 import {atom} from 'jotai';
-import {todosAtom} from './shared';
+import {todosAtom} from 'store/shared';
 
 export const lastIdAtom = atom(
     (get) => {
