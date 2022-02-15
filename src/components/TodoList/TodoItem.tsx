@@ -1,5 +1,5 @@
 import React from 'react';
-import {ButtonGroup, Flex, IconButton} from '@chakra-ui/react';
+import {ButtonGroup, Flex, IconButton, PropsOf} from '@chakra-ui/react';
 import {useTodoItem} from '../../hooks';
 import {
   createCheckIconStyles,
@@ -24,6 +24,18 @@ const TodoItemCheckIcon: React.FC<TodoItemCheckIconProps> =
           null;
     };
 
+type TodoItemDeleteIconComponent = React.FC<PropsOf<typeof IconButton>>
+
+const TodoItemDeleteIcon: TodoItemDeleteIconComponent =
+    (props) => {
+      return (
+        <IconButton
+          {...createDeleteIconStyles()}
+          {...props}
+        />
+      );
+    };
+
 export const TodoItem: React.FC<{ todo: Todo }> =
     ({todo: {id, title, completed}}) => {
       const {deleteTodo, completeTodo} = useTodoItem(id);
@@ -32,7 +44,7 @@ export const TodoItem: React.FC<{ todo: Todo }> =
         <Flex {...createTodoItemStyles(completed)}>
           {title}
           <ButtonGroup>
-            <IconButton {...createDeleteIconStyles()} onClick={deleteTodo}/>
+            <TodoItemDeleteIcon onClick={deleteTodo}/>
             <TodoItemCheckIcon onClick={completeTodo} completed={completed}/>
           </ButtonGroup>
         </Flex>
