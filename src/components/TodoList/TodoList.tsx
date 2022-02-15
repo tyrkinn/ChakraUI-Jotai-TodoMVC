@@ -1,5 +1,5 @@
 import React from 'react';
-import {List} from '@chakra-ui/react';
+import {List, ListItem} from '@chakra-ui/react';
 import {TodoItem} from './TodoItem';
 import {useAtom} from 'jotai';
 import {todoView} from '../../store/todoList';
@@ -11,7 +11,10 @@ export const TodoList: React.FC = () => {
     <List
       {...createTodoListStyles()}
     >
-      {todosView.map((t) => <TodoItem todo={t} key={t.id}/>)}
+      {todosView.map(
+          (t) =>
+            <ListItem key={t.id}><TodoItem todo={t} /></ListItem>,
+      )}
     </List>
   );
 };

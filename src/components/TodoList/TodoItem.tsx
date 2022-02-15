@@ -29,14 +29,12 @@ export const TodoItem: React.FC<{ todo: Todo }> =
       const {deleteTodo, completeTodo} = useTodoItem(id);
 
       return (
-        <ListItem>
-          <Flex {...createTodoItemStyles(completed)}>
-            {title}
-            <ButtonGroup>
-              <IconButton {...createDeleteIconStyles()} onClick={deleteTodo}/>
-              <TodoItemCheckIcon onClick={completeTodo} completed={completed}/>
-            </ButtonGroup>
-          </Flex>
-        </ListItem>
+        <Flex {...createTodoItemStyles(completed)}>
+          {title}
+          <ButtonGroup>
+            <IconButton {...createDeleteIconStyles()} onClick={deleteTodo}/>
+            <TodoItemCheckIcon onClick={completeTodo} completed={completed}/>
+          </ButtonGroup>
+        </Flex>
       );
     };
