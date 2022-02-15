@@ -6,7 +6,7 @@ import {TodoFilter} from './components/Filter';
 import './App.css';
 import {useAtom} from 'jotai';
 import {filteredTodosAtom} from './store/todoList';
-import {TodoItem} from './components/TodoList';
+import {TodoItem} from './components/TodoItem';
 
 
 export const App: FC = () => {
